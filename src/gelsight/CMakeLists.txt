@@ -221,8 +221,5 @@ target_link_libraries(image_pub ${catkin_LIBRARIES} ${OpenCV_LIBS})
 add_executable(image_sub src/image_sub.cpp)
 target_link_libraries(image_sub ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
-add_executable(sync_sub src/sync_sub.cpp)
-target_link_libraries(sync_sub ${catkin_LIBRARIES} ${OpenCV_LIBS})
-
 add_executable(combined_sub src/combined_sub.cpp)
 target_link_libraries(combined_sub ${catkin_LIBRARIES} ${OpenCV_LIBS})

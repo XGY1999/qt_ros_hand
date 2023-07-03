@@ -1,0 +1,8 @@
+prefix=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel
+
+Name: pose_estimate
+Description: Description of pose_estimate
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

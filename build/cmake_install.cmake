@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -136,6 +136,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/gtest/cmake_install.cmake")
+  include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/gelsight/cmake_install.cmake")
+  include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/hand_controller/cmake_install.cmake")
+  include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/pose_estimate/cmake_install.cmake")
+  include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/ros_qt_demo/cmake_install.cmake")
+  include("/home/xgy/ws_xgy/ws_project/qt_ros_hand/build/point/cmake_install.cmake")
 
 endif()
 

@@ -6,7 +6,7 @@ using namespace std;
 void m_hand_Callback(const sensor_msgs::JointState::ConstPtr& msg)
 {
     ofstream ofs;
-    ofs.open("/home/xgy/XGY/xgy_data/xgy_0509_data/csv/hand_02.csv",ios::out|ios::app);
+    ofs.open("/home/xgy/ws_xgy/ws_data/xgy_0702_data/csv/hand_02.csv",ios::out|ios::app);
 
       ofs <<msg->header.stamp <<","
       << msg->effort[0] << ","

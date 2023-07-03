@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     cout<<"control begin"<<endl;
 
     bool ControlKey = true;
-    bool RosKey = false;
+    bool RosKey = true;
     std::thread th1([&]{
     while (ControlKey)
     {
@@ -62,7 +62,6 @@ int main(int argc, char **argv)
             msg.velocity[i] = sp_hand->m_parameter_K[i-5];
           }
         }
-//        msg.velocity[12] =
         hand_pub.publish(msg);
         ros::spinOnce();
         loop_rate.sleep();

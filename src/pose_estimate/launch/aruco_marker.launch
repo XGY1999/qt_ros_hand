@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="pose_estimate"  type="pose_pub" name="pose_pub"/>
+    <node pkg="pose_estimate"  type="pose_sub"  name="pose_sub"/>
+</launch>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.9.2, 2023-05-28T21:23:22. -->
+<!-- Written by QtCreator 4.9.2, 2023-07-03T15:40:43. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -67,7 +67,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{b756dea4-8e81-4573-b295-65ae1683dd56}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">1</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory"></value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
@@ -105,21 +105,21 @@
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">CMAKE_PREFIX_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel:/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/devel:/opt/ros/melodic</value>
-     <value type="QString">LD_LIBRARY_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib:/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/devel/lib:/opt/ros/melodic/lib</value>
+     <value type="QString">CMAKE_PREFIX_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel:/home/xgy/robot_hand_2.0/devel:/home/xgy/ur_robot_ros/devel:/home/xgy/robot_hand_ros/devel:/opt/ros/melodic</value>
+     <value type="QString">LD_LIBRARY_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib:/home/xgy/robot_hand_2.0/devel/lib:/home/xgy/ur_robot_ros/devel/lib:/home/xgy/robot_hand_ros/devel/lib:/opt/ros/melodic/lib</value>
      <value type="QString">PATH=/opt/ros/melodic/bin:/home/xgy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
-     <value type="QString">PKG_CONFIG_PATH=/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig</value>
+     <value type="QString">PKG_CONFIG_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/pkgconfig:/home/xgy/robot_hand_2.0/devel/lib/pkgconfig:/home/xgy/ur_robot_ros/devel/lib/pkgconfig:/home/xgy/robot_hand_ros/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig</value>
      <value type="QString">PWD=/home/xgy/ws_xgy/ws_project/qt_ros_hand</value>
-     <value type="QString">PYTHONPATH=/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages</value>
-     <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/share/common-lisp:/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/devel/share/common-lisp</value>
+     <value type="QString">PYTHONPATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/python2.7/dist-packages:/home/xgy/robot_hand_2.0/devel/lib/python2.7/dist-packages:/home/xgy/ur_robot_ros/devel/lib/python2.7/dist-packages:/home/xgy/robot_hand_ros/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages</value>
+     <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/share/common-lisp:/home/xgy/robot_hand_2.0/devel/share/common-lisp:/home/xgy/ur_robot_ros/devel/share/common-lisp:/home/xgy/robot_hand_ros/devel/share/common-lisp</value>
      <value type="QString">ROS_DISTRO=melodic</value>
      <value type="QString">ROS_ETC_DIR=/opt/ros/melodic/etc/ros</value>
      <value type="QString">ROS_MASTER_URI=http://localhost:11311</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/src:/home/xgy/ws_xgy/ws_project/ros_hand/qt_ros_hand/src:/opt/ros/melodic/share</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/xgy/ws_xgy/ws_project/qt_ros_hand/src:/home/xgy/robot_hand_2.0/src:/home/xgy/ur_robot_ros/src:/home/xgy/robot_hand_ros/src:/opt/ros/melodic/share</value>
      <value type="QString">ROS_PYTHON_VERSION=2</value>
      <value type="QString">ROS_ROOT=/opt/ros/melodic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
-     <value type="QString">SHLVL=2</value>
+     <value type="QString">SHLVL=730</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
@@ -382,7 +382,164 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
-   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ROS Run Configuration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunConfigurationThis is a test</value>
+    <valuemap type="QVariantMap" key="ROSProjectManager.RunStepList">
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.RunStepList</value>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.0">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">true</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">ros_qt_demo</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/ros_qt_demo</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">ros_qt_demo</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/ros_qt_demo/ros_qt_demo</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.1">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments">-l=0.01 -v=0</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">pose_estimate</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/pose_estimate</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">pose_pub</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/pose_estimate/pose_pub</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.2">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">hand_controller</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/hand_controller</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">hand_pub</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/hand_controller/hand_pub</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.3">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">point</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/point</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">test_pub</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/point/test_pub</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.4">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">true</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">gelsight</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/gelsight</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">image_pub</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/gelsight/image_pub</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.5">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">false</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">true</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">gelsight</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/gelsight</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">combined_sub</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/gelsight/combined_sub</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.RunStepList.Step.6">
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunStep</value>
+      <value type="bool" key="ProjectExplorer.RunStep.Enabled">true</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
+      <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">true</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">hand_controller</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.PackagePath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/src/hand_controller</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">sync</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/lib/hand_controller/sync</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.RunStepList.StepsCount">7</value>
+    </valuemap>
+    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>
  </data>
  <data>

@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/xgy/ws_xgy/ws_project/qt_ros_hand/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/xgy/ws_xgy/ws_project/qt_ros_hand/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/xgy/ws_xgy/ws_project/qt_ros_hand/src:$ROS_PACKAGE_PATH"

@@ -1,0 +1,8 @@
+prefix=/home/xgy/ws_xgy/ws_project/qt_ros_hand/install
+
+Name: point
+Description: Description of point
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs message_runtime

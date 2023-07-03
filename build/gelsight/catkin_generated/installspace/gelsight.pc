@@ -1,0 +1,8 @@
+prefix=/home/xgy/ws_xgy/ws_project/qt_ros_hand/install
+
+Name: gelsight
+Description: Description of gelsight
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

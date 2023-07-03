@@ -11,7 +11,23 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
     try   // 如果转换失败，则提跳转到catch语句
     {
-        cout<< "image sub is ok"<<endl;
+//        cout<< "image sub is ok"<<endl;
+          ofstream ofs;
+          ofs.open("/home/xgy/ws_xgy/ws_data/xgy_0702_data/csv/gelsight_01.csv",ios::out|ios::app);
+          ofs <<msg->header.stamp <<endl;
+          cout << "Get image and save its time."<<endl;
+          ofs.close();
+
+//          double t = msg->header.stamp.toSec();//把时间戳转化成浮点型格式
+//          ROS_INFO("time:%f\n",t);//输出显示
+//          static int count = 0;
+//          double image_time = msg->header.stamp.toSec();
+
+//          cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);   // 将图像转换openCV的格式，并输出到窗口
+//          cv::imwrite("/home/xgy/xgy_files/xgy_file/picture_for_matlab/"+std::to_string(image_time)+".jpg", cv_bridge::toCvShare(msg,"bgr8")->image);
+//          cv::imwrite("/home/xgy/xgy_files/xgy_0111_data/picture/0111_3/sample"+std::to_string(count)+".jpg", cv_bridge::toCvShare(msg,"bgr8")->image);
+//          count ++;
+//          cv::waitKey(1); // 一定要有waitKey(),要不然是黑框或者无窗口
     }
     catch(cv_bridge::Exception& e)
     {
@@ -22,27 +38,25 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 
 void m_hand_Callback(const sensor_msgs::JointState::ConstPtr& msg)
 {
-  cout << "hand sub is ok" << endl;
-  //    ofstream ofs;
-  //    ofs.open("/home/xgy/XGY/xgy_data/xgy_0509_data/csv/hand_02.csv",ios::out|ios::app);
+      ofstream ofs;
+      ofs.open("/home/xgy/ws_xgy/ws_data/xgy_0702_data/csv/hand_01.csv",ios::out|ios::app);
 
-  //    ofs <<msg->header.stamp <<","
-  //    << msg->effort[0] << ","
-  //    << msg->effort[1] << ","
-  //    << msg->effort[2] << ","
-  //    << msg->effort[3] << ","
-  //    << msg->effort[4] << ","
-  //    << msg->effort[5] << ","
-  //    << msg->position[0] << ","
-  //    << msg->position[1] << ","
-  //    << msg->position[2] << ","
-  //    << msg->position[3] << ","
-  //    << msg->position[4] << ","
-  //    << msg->position[5] << ","
-  //    << msg->velocity[0] << ","
-  //    << msg->velocity[1] <<endl;
-  //    cout << "Get the information of hand and save it."<<endl;
-  //    ofs.close();
+      ofs <<msg->header.stamp <<"," ;//时间
+      //当前Load & 目标Load
+      for (int i =0;i<12;i++) {
+        ofs << msg->effort[i]<<",";
+      }
+      //当前position & 目标position
+      for (int i =0;i<12;i++) {
+        ofs << msg->position[i]<<",";
+      }
+      //B & K
+      for (int i =0;i<11;i++) {
+        ofs << msg->velocity[i]<<",";
+      }
+      ofs << msg->velocity[11]<<endl;
+      cout << "Get the information of hand and save it."<<endl;
+      ofs.close();
 }
 
 int main(int argc, char** argv)
@@ -52,7 +66,7 @@ int main(int argc, char** argv)
     ros::NodeHandle nh; // 注册句柄
     ros::Subscriber hand_sub = nh.subscribe("/hand_info",1,m_hand_Callback);
     image_transport::ImageTransport it(nh); // 注册句柄
-    image_transport::Subscriber imageSub = it.subscribe("/cameraImage", 1000, imageCallback);  // 订阅/cameraImage话题，并添加回调函数
+    image_transport::Subscriber imageSub = it.subscribe("/cameraImage", 1, imageCallback);  // 订阅/cameraImage话题，并添加回调函数
     ros::spin();  // 循环等待回调函数触发
     return 0;
 }

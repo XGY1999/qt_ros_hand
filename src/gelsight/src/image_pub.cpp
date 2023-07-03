@@ -17,7 +17,7 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "image_publisher_one");  // ros初始化，定义节点名为image_publisher_one
     ros::NodeHandle nh;                      // 定义ros句柄
     image_transport::ImageTransport it(nh);  //  类似ROS句柄
-    image_transport::Publisher image_pub = it.advertise("/cameraImage", 1000);   // 发布话题名/cameraImage
+    image_transport::Publisher image_pub = it.advertise("/cameraImage", 1);   // 发布话题名/cameraImage
 
     ros::Rate loop_rate(30);   // 设置刷新频率，Hz
     cv::Mat imageRaw;  // 原始图像保存
